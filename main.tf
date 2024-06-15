@@ -87,7 +87,7 @@ module "ec2_instance_us_east_1" {
   source        = "./modules/ec2_instance"
   providers     = { aws = aws.us_east_1 }
   ami           = "ami-08a0d1e16fc3f61ea"
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   subnet_id     = module.subnets_us_east_1.public_subnets[0]
   sg_id         = module.security_group_us_east_1.sg_id
   name          = "us-east-1-instance"
@@ -97,7 +97,7 @@ module "ec2_instance_us_east_2" {
   source        = "./modules/ec2_instance"
   providers     = { aws = aws.us_east_2 }
   ami           = "ami-033fabdd332044f06"
-  instance_type = "t2.small"
+  instance_type = "t2.micro"
   subnet_id     = module.subnets_us_east_2.public_subnets[0]
   sg_id         = module.security_group_us_east_2.sg_id
   name          = "us-east-2-instance"
