@@ -23,12 +23,4 @@ variable "name" {
   type        = string
 }
 
-variable "access_key" {
-   description = "credentials"
-   default = "AKIAZQ3DOA37UWDIQ7DU"
-}
 
-variable "secret_key" {
-   description = "credentials"
-   default = "Oh5VOErxjKz8cdKkNI3z/6zN5icWwcy2toIeoxFT"
-}
